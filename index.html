@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>订单明细</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<style>
+			.weui-form-preview:before{
+				border: none;
+			}
+			.total{
+	     	    background-color: #ccc;
+			    padding: 2px 8px;
+			    border-radius: 100px;
+			    color: #fff;
+			    letter-spacing: 1px;
+			    display: inline-block;
+			    margin: 0 auto;
+			    font-size: 14px;
+			    margin-bottom: 10px;
+			    margin-top: 10px;
+		     }
+		     .weui-form-preview__item p{
+		     	text-align: left;
+		     	display: block;
+		     	width: 100%;
+		     	padding-bottom: 10px;
+		     	line-height: 0.8;
+		     }
+		     .weui-form-preview__item{
+		     	margin-top: 5px;
+		     }
+		</style>
+	</head>
+	<body style="background: #f8f8f8;">
+		<header class="weui-flex black_bg white_text w100" style="position: fixed; top: 0; z-index: 9;">
+		     <a  href="#" class="white_text" style="width: 4rem;"><div class="p10"><i class="fa fa-angle-left mr5"></i><span class="font14">返回</span></div></a>  
+		     <div class="weui-flex__item tc p10">账单详情</div>
+		     <div class="font14 tc pt15" style="width: 4rem; padding-top:12px;"></div>
+		</header>
+		<div class="page-hd tc" style="padding: 70px 20px 20px 20px; background: #fff; ">
+			<a class="total tc">合计总额</a>
+		    <h1 class="page-hd-title tc font34" style="font-weight: normal;"> 300.00</h1>
+		    <p class="page-hd-desc tc grey9_text font14">交易成功</p>
+		    
+		</div>
+		
+		<div class="weui-form-preview">
+		    	<div class="weui-form-preview__bd">
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">物业费</label>
+		                <span class="weui-form-preview__value black_text font16">100.00</span>
+		                <p>2018年9月-11月<span class="fr">2018年11月08日结清</span></p>  
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">垃圾费 </label>
+		                <span class="weui-form-preview__value black_text font16">50.00</span>
+		                <p>2018年9月-11月<span class="fr">2018年11月08日结清</span></p>  
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">购物商品费 </label>
+		                <span class="weui-form-preview__value black_text font16">100.00</span>
+		                <p>2018年9月-11月<span class="fr">2018年11月08日结清</span></p>  
+		            </div>
+		       </div>
+		       <div class="weui-form-preview__bd" style="border-top: #eee solid 1px;">
+					<div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">创建时间</label>
+		                <span class="weui-form-preview__value black_text">2018-11-07 12:05</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">单据编号</label>
+		                <span class="weui-form-preview__value black_text">201811072201547846</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">支付方式</label>
+		                <span class="weui-form-preview__value black_text">微信</span>
+		            </div>
+			   </div>
+		</div>
+		
+		
+	</body>
+</html>

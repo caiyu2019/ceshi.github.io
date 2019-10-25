@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>员工</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		
+		<script type="text/javascript" src="js/uploadPreview.js" ></script>
+		<style>
+			.ss{position: relative; width: 100px;  margin: 0 auto; }
+			.ss input{position: absolute;  left: 0; width: 100px; opacity: 0; bottom:-26px;}
+			.weui-cells{font-size: 15px; margin-top: 0; }
+			.weui-cells:before{border-top: none;}
+			.weui-cell:before{left: 0;}
+			.weui-cell{padding: 12px 15px;}
+			.photo-bg{width: 100%; padding-bottom: 15px; padding-top: 70px; text-align: center; background: #fff;}
+			.name{font-size: 14px;margin-top: 5px; display: inline-block; padding: 3px 10px; color: #4ba4fc ; border:#4ba4fc  solid 1px; border-radius: 100px;}
+		</style>
+	</head>
+	<body style="background: #f8f8f8;">
+		<header class="weui-flex black_bg white_text w100" style="position: fixed; top: 0; z-index: 9;">
+		     <a  href="#" class="white_text" style="width: 4rem;"><div class="p10"><i class="fa fa-angle-left mr5"></i><span class="font14">返回</span></div></a>  
+		     <div class="weui-flex__item tc p10">员工</div>
+		     <div class="font14 tc pt15" style="width: 4rem; padding-top:12px;"></div>
+		</header>
+		
+		<div class="photo-bg" id="warp">
+			
+                	<div class="ss">
+					    <input type="file" id="up_img_WU_FILE_0" />
+					    <img id="imgShow_WU_FILE_0" src="images/photo.png" width="100" height="100" style="border-radius: 5px; overflow: hidden;" />
+					</div>
+					<span class="name"> 修改头像 </span>
+		</div>
+		
+		
+		
+	    <div class="weui-cells">
+	        <div class="weui-cell">
+	            <div class="weui-cell__bd">
+	                <p>姓名</p>
+	            </div>
+	            <div class="weui-cell__ft">张丹峰</div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class="weui-cell__bd">
+	                <p>性别</p>
+	            </div>
+	            <div class="weui-cell__ft">男</div>
+	        </div>
+	         <div class="weui-cell">
+	            <div class="weui-cell__bd">
+	                <p>工号</p>
+	            </div>
+	            <div class="weui-cell__ft">20181122</div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class="weui-cell__bd">
+	                <p>电话</p>
+	            </div>
+	            <div class="weui-cell__ft">136874845698</div>
+	        </div>
+	        <div class="weui-cell">
+	            <div class="weui-cell__bd">
+	                <p>所在部门</p>
+	            </div>
+	            <div class="weui-cell__ft">技术部</div>
+	        </div>
+	    </div>
+	</body>
+</html>

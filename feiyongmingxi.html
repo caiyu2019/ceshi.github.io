@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>费用明细</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<style>
+			.weui-form-preview:before{
+				border: none;
+			}
+			.total{
+	     	    background-color: #ccc;
+			    padding: 2px 8px;
+			    border-radius: 100px;
+			    color: #fff;
+			    letter-spacing: 1px;
+			    display: inline-block;
+			    margin: 0 auto;
+			    font-size: 14px;
+			    margin-bottom: 10px;
+			    margin-top: 10px;
+		     }
+		     .weui-form-preview__item p{
+		     	text-align: left;
+		     	display: block;
+		     	width: 100%;
+		     	padding-bottom: 10px;
+		     	line-height: 0.8;
+		     }
+		     .weui-form-preview__item{
+		     	margin-top: 5px;
+		     }
+		     .btn-bar{
+		     	background: #fff;
+		     	border-top: #eee solid 1px;
+		     	position: fixed;
+		     	bottom: 0;
+		     	width: 100%;
+		     	box-sizing: border-box;
+		     	padding:10px;
+		     	text-align: center;
+		     }
+		     .weui-form-preview:before{
+		     	border-top: #ddd solid 1px;
+		     	left: 15px;
+		     	right: 15px;
+		     }
+		</style>
+	</head>
+	<body style="background: #f8f8f8;">
+		<header class="weui-flex black_bg white_text w100" style="position: fixed; top: 0; z-index: 9;">
+		     <a  href="#" class="white_text" style="width: 4rem;"><div class="p10"><i class="fa fa-angle-left mr5"></i><span class="font14">返回</span></div></a>  
+		     <div class="weui-flex__item tc p10">费用明细</div>
+		     <div class="font14 tc pt15" style="width: 4rem; padding-top:12px;"></div>
+		</header>
+		
+		<!-- 已支付 -->
+		<!--<div class="page-hd tc" style="padding: 70px 20px 20px 20px; background: #fff; ">
+			<a class="total tc">合计总额</a>
+		    <h1 class="page-hd-title tc font34" style="font-weight: normal;"> 300.00</h1>
+		    <p class="page-hd-desc tc grey9_text font14">已支付</p>
+		    
+		</div>
+
+		<div class="weui-form-preview">
+		    	<div class="weui-form-preview__bd">
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">项目名称</label>
+		                <span class="weui-form-preview__value black_text">物业费</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">计费时间</label>
+		                <span class="weui-form-preview__value black_text">2018年8月-11月</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">支付时间</label>
+		                <span class="weui-form-preview__value black_text">2018年11月05日  10:22</span>
+		            </div>
+		            
+		       </div>
+		       <div class="weui-form-preview__bd" style="border-top: #eee solid 1px;">
+					<div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">创建时间</label>
+		                <span class="weui-form-preview__value black_text">2018-11-07 12:05</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">订单号</label>
+		                <span class="weui-form-preview__value black_text">201811072201547846</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">支付方式</label>
+		                <span class="weui-form-preview__value black_text">微信</span>
+		            </div>
+			   </div>
+		</div>-->
+		
+		<!-- 未支付 -->
+		<div class="page-hd tc" style="padding: 70px 20px 20px 20px; background: #fff; ">
+			<a class="total tc">合计总额</a>
+		    <h1 class="page-hd-title tc font34" style="font-weight: normal;"> 300.00</h1>
+		    <p class="page-hd-desc tc red_text font14">未支付</p>
+		    
+		</div>
+		
+		<div class="weui-form-preview">
+		    	<div class="weui-form-preview__bd">
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">物业费</label>
+		                <span class="weui-form-preview__value black_text">￥200.00</span>
+		                <p>2018年08月-10月<span class="fr">未支付</span></p>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">垃圾费</label>
+		                <span class="weui-form-preview__value black_text">￥50.00</span>
+		                <p>2018年08月-10月<span class="fr">未支付</span></p>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">材料费</label>
+		                <span class="weui-form-preview__value black_text">￥150.00</span>
+		                <p>2018年08月-10月<span class="fr">未支付</span></p>
+		            </div>
+		            
+		       </div>
+		       <!--<div class="weui-form-preview__bd" style="border-top: #eee solid 1px;">
+					<div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">创建时间</label>
+		                <span class="weui-form-preview__value black_text">2018-11-07 12:05</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">订单号</label>
+		                <span class="weui-form-preview__value black_text">201811072201547846</span>
+		            </div>
+		            <div class="weui-form-preview__item">
+		                <label class="weui-form-preview__label">支付方式</label>
+		                <span class="weui-form-preview__value black_text">微信</span>
+		            </div>
+			   </div>-->
+		</div>
+		
+		<!--<div class="btn-bar">
+			<a href="javascript:;" class="weui-btn weui-btn_primary">立即支付</a>
+		</div>
+		-->
+		
+	</body>
+</html>
